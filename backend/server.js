@@ -1,7 +1,6 @@
 import express from 'express';
 import multer from 'multer';
 import cors from 'cors';
-import path from 'path';
 import fs from 'fs';
 import { PDFDocument } from 'pdf-lib';
 
@@ -17,7 +16,7 @@ if (!fs.existsSync('./uploads')) {
   fs.mkdirSync('./uploads');
 }
 
-app.use('/contracts', express.static('contracts'));
+app.use('/api/contracts', express.static('contracts'));
 app.use('/uploads', express.static('uploads'));
 
 // Route to receive signature data and return signed PDF
