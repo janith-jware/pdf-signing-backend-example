@@ -10,7 +10,7 @@ function App() {
       <h2>Contract Signing</h2>
       <div className='container'>
         <embed
-          src="http://localhost:5000/contracts/contract.pdf"
+          src="http://localhost:5000/api/contracts/contract.pdf"
           width="100%"
           height="500px"
           type="application/pdf"
